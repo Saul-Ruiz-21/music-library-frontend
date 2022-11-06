@@ -8,6 +8,7 @@ import SearchBar from "./Components/SearchBar/SearchBar";
 function App() {
 
   const [songs, setSongs] = useState([])
+  const [search, setSearch] = useState('')
 
   useEffect(() => {
     getAllSongs();
@@ -15,35 +16,14 @@ function App() {
 
   async function getAllSongs(){
     let response = await axios.get('http://127.0.0.1:8000/api/music/');
+    console.log(response)
     setSongs(response.data)
-  }
-
-  function searchForSong(){
-
-    let search = songs.filter(song => {
-        if(SearchBar === song.title){
-            return true
-        }
-        else if(SearchBar === song.artist){
-            return true
-        }
-        else if(SearchBar === song.album){
-            return true
-        }
-        else if(SearchBar === song.release_date){
-            return true
-        }
-        else if(SearchBar === song.genre){
-            return true
-        }
-    })
-
   }
 
   return (
     <div className="App">
       <NavBar />
-      <SearchBar />
+      <SearchBar  songs={songs} updateSongs={setSongs}/>
       <MusicTable songs={songs}/>
     </div>
   );

@@ -20,7 +20,7 @@ const MusicTable = (props) => {
                 </thead>
                 <tbody>
                     {props.songs.map(song => 
-                        <tr>
+                        <tr key={song.id}>
                             <td>{song.title}</td>
                             <td>{song.artist}</td>
                             <td>{song.album}</td>
