@@ -4,7 +4,6 @@ import NavBar from "./Components/NavBar/NavBar";
 import MusicTable from "./Components/MusicTable/MusicTable";
 import SearchBar from "./Components/SearchBar/SearchBar";
 import AddMusicTable from "./Components/AddMusicTable/AddMusicTabel";
-import './App.css'
 
 
 function App() {

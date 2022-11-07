@@ -32,7 +32,6 @@ const SearchBar = ({songs, updateSongs}) => {
         <div className="Bar">
             <input type="text" placeholder="Search..." value={SearchTerm} onChange={(event) => setSearchTerm(event.target.value)} />
             <button type="submit" onClick={searchForSong}>search</button>
-            <button type="reset" onClick={songs}>Refresh</button>
         </div>
     );
 }
