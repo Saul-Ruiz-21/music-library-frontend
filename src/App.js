@@ -3,12 +3,13 @@ import axios from 'axios';
 import NavBar from "./Components/NavBar/NavBar";
 import MusicTable from "./Components/MusicTable/MusicTable";
 import SearchBar from "./Components/SearchBar/SearchBar";
+import AddMusicTable from "./Components/AddMusicTable/AddMusicTabel";
+import './App.css'
 
 
 function App() {
 
   const [songs, setSongs] = useState([])
-  const [search, setSearch] = useState('')
 
   useEffect(() => {
     getAllSongs();
@@ -21,11 +22,15 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <NavBar />
-      <SearchBar  songs={songs} updateSongs={setSongs}/>
-      <MusicTable songs={songs}/>
-    </div>
+    <body>
+      <div className="App">
+        <NavBar />
+        <MusicTable songs={songs}/>
+        <AddMusicTable GetAllSongs={getAllSongs}/>
+        <SearchBar  songs={songs} updateSongs={setSongs}/>
+      </div>
+    </body>
+    
   );
 }
 

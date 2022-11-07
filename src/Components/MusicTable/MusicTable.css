@@ -1,0 +1,41 @@
+.surronding_box {
+    box-sizing: border-box;
+    width: 90%;
+    border: 5px solid black;
+    margin-inline: auto;
+    padding: 20px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    height: 50%;
+    font-size: x-large;
+}
+
+.Title {
+    text-align: center;
+    width: 20%;
+}
+
+.Artist {
+    text-align: center;
+    width: 20%;
+}
+
+.Album {
+    text-align: center;
+    width: 25%;
+}
+
+.ReleaseDate {
+    text-align: center;
+    width: 20%;
+}
+
+.Genre {
+    text-align: center;
+    width: 20%;
+}
+
+.Body {
+    text-align: start;
+}

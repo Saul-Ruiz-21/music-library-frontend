@@ -1,0 +1,13 @@
+.Bar {
+    position: absolute;
+    left: 41.5%;
+    bottom: 58%;
+}
+
+.Bar input {
+    font-size: larger;
+}
+
+.Bar button {
+    cursor: pointer;
+}

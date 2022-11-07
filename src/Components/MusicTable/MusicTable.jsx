@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import SearchBar from '../SearchBar/SearchBar';
-
+import './MusicTable.css'
 
 const MusicTable = (props) => {
     
 
 
     return (
-        <div>
+        <div className='surronding_box'>
             <table>
                 <thead>
                     <tr>
@@ -18,7 +17,7 @@ const MusicTable = (props) => {
                         <th className='Genre'>Genre</th> 
                     </tr> 
                 </thead>
-                <tbody>
+                <tbody className='Body'>
                     {props.songs.map(song => 
                         <tr key={song.id}>
                             <td>{song.title}</td>

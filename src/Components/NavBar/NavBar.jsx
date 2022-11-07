@@ -4,7 +4,7 @@ const NavBar = (props) => {
     return (
         <div className='Nav'>
             <h1>
-                MeTune Music
+                MYtune Music
             </h1>
         </div>
     )

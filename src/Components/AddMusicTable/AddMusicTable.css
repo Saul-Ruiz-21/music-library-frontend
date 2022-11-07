@@ -1,0 +1,35 @@
+.AddMusicTable {
+    box-sizing: border-box;
+    border: 5px solid black;
+    width: 20%;
+    text-align: center;
+    margin-inline: auto;
+    font-size: larger;
+    height: 250px;
+    margin-top: 24px;
+}
+
+.AddMusicTable button {
+    cursor: grab;
+}
+
+.title {
+    padding: 10px;
+}
+
+.artist {
+    padding: 10px;
+}
+
+.album {
+    padding: 10px;
+}
+
+.release {
+    padding: 10px;
+}
+
+.genre {
+    padding: 10px;
+}
+
